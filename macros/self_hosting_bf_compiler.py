@@ -1,8 +1,12 @@
 """
-macro-language python DSL
+A brainfuck to GNU assembler compiler, implemented
+as a python macro-language dsl.
 
-when run in python, compiles and then prints
-the brainfuck source of a brainfuck -> gas compiler
+To compile this source to brainfuck opcodes, run this file via
+
+    python --arch abfc/compile_macro.py self_hosting_bf_compiler.py
+
+where arch is e.g. ia32 or x86_64
 """
 
 # ====================
