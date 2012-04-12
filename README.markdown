@@ -16,14 +16,21 @@ is used as part of the build pipeline.
 gallery of horror
 -----------------
 
-*   macro language source for brainfuck to GNU assembler compiler:
+*   macro-language source for brainfuck to GNU assembler compiler:
     [`self_hosting_bf_compiler.py`](http://github.com/fcostin/abfc/blob/master/macros/self_hosting_bf_compiler.py)
 *   generated brainfuck source for brainfuck to GNU assembler compiler:
     [`bf_compiler.brainfuck`](http://github.com/fcostin/abfc/blob/master/gallery/bf_compiler.brainfuck)
 *   output produced by feeding the brainfuck compiler its own brainfuck source:
     [`bf_compiler_self_hosted.s`](http://github.com/fcostin/abfc/blob/master/gallery/bf_compiler_self_hosted.s)
-*   a simple brainfuck to GNU assembler compiler, implemented in python:
-    [`self_hosting_bf_compiler.py`](http://github.com/fcostin/abfc/blob/master/macros/self_hosting_bf_compiler.py)
+*   a simple brainfuck to GNU assembler compiler, implemented in Python:
+    [`bootstrap_bf.py`](http://github.com/fcostin/abfc/blob/master/abfc/bootstrap_bf.py)
+*   Python string literals containing the GNU assembler fragments for the
+    [`ia32`](http://github.com/fcostin/abfc/blob/master/abfc/arch/ia32.py)
+    and
+    [`x86_64`](http://github.com/fcostin/abfc/blob/master/abfc/arch/x86_64.py)
+    code generation.
+*   Python code implementing the macro-language to brainfuck compiler:
+    [`abcf/`](http://github.com/fcostin/abfc/tree/master/abfc)
 
 
 walk-through of build pipeline
