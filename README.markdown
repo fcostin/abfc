@@ -13,6 +13,18 @@ implemented in Python, and is only higher-level relative to brainfuck.
 Also included is a brainfuck to GNU assembler compiler written in Python, which
 is used as part of the build pipeline.
 
+gallery of horror
+-----------------
+
+*   macro language source for brainfuck to GNU assembler compiler:
+    [`self_hosting_bf_compiler.py`](http://github.com/fcostin/abfc/blob/master/macros/self_hosting_bf_compiler.py)
+*   generated brainfuck source for brainfuck to GNU assembler compiler:
+    [`bf_compiler.brainfuck`](http://github.com/fcostin/abfc/blob/master/gallery/bf_compiler.brainfuck)
+*   output produced by feeding the brainfuck compiler its own brainfuck source:
+    [`bf_compiler_self_hosted.s`](http://github.com/fcostin/abfc/blob/master/gallery/bf_compiler_self_hosted.s)
+*   a simple brainfuck to GNU assembler compiler, implemented in python:
+    [`self_hosting_bf_compiler.py`](http://github.com/fcostin/abfc/blob/master/macros/self_hosting_bf_compiler.py)
+
 
 walk-through of build pipeline
 ------------------------------
