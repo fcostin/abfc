@@ -49,12 +49,14 @@ Here's what happens when we run `make`:
     it's own source code, and ensure the GNU assembly it emits is a perfect match for the
     assembly produced during the previous stage:
 
-    cat build/bf_compiler.brainfuck | build/bf_compiler_self_hosted.out > build/bf_compiler_self_hosted_2.s
-    diff build/bf_compiler_self_hosted.s build/bf_compiler_self_hosted_2.s
+        cat build/bf_compiler.brainfuck | build/bf_compiler_self_hosted.out > build/bf_compiler_self_hosted_2.s
+        diff build/bf_compiler_self_hosted.s build/bf_compiler_self_hosted_2.s
 
 5.  For a final demonstration of the awesome power and practical utility of our
     brainfuck compiler, we compile the brainfuck "hello world" example from wikipedia:
 
+        cat bf_demos/hello.brainfuck 
+        ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
         cat bf_demos/hello.brainfuck | build/bf_compiler_self_hosted.out> build/hello.s
         gcc build/hello.s -nostdlib -Wl,--build-id=none -o build/hello.out
         build/hello.out
