@@ -6,3 +6,4 @@ test_*/testresult
 test_*/output.*
 test_*/*.s
 test_*/*.out
+test_fixed_point
