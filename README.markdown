@@ -1,6 +1,15 @@
 a[n awful] brainfuck compiler
 =============================
 
+build status
+------------
+
+[![Build Status](https://travis-ci.org/fcostin/abfc.png)](https://travis-ci.org/fcostin/abfc)
+
+
+what is this?
+-------------
+
 Compiles brainfuck programs to `ia32` or `x86_64` backends, via the GNU assembler.
 
 The brainfuck to GNU assembler compiler is itself written in brainfuck.
