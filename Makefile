@@ -11,15 +11,6 @@ all: build/bf_compiler_self_hosted.out
 .PHONY: all
 
 
-clean:
-	rm -f build/bf_compiler.brainfuck
-	rm -f build/bf_compiler_boot.s
-	rm -f build/bf_compiler_boot.out
-	rm -f build/bf_compiler_self_hosted.s
-	rm -f build/bf_compiler_self_hosted.out
-.PHONY: clean
-
-
 build/bf_compiler.brainfuck:	macros/self_hosting_bf_compiler.py
 	$(PYTHON) abfc/compile_macro.py $(BF_ARCH) $< > $@
 
