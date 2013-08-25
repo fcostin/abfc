@@ -2,3 +2,7 @@ build/*
 *.pyc
 *.swp
 *~
+test_*/testresult
+test_*/output.*
+test_*/*.s
+test_*/*.out
